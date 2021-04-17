@@ -29,4 +29,4 @@ jobs:
           aws-region: us-east-1
 
       - name: sync public with s3
-        run: aws s3 sync public s3://${{ secrets.AWS_BUCKET }}/shearer.fyi --delete --acl public-read
+        run: aws s3 sync public s3://${{ secrets.AWS_BUCKET }} --delete --acl public-read
